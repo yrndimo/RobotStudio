@@ -1,0 +1,48 @@
+#
+# Generated backup file, do not edit.
+#
+# Originally at: /hd0a/66-41110/BACKUP/BAK20241128_1522
+# 2024-11-28  16:23:14
+#
+>>SYSTEM_ID:
+99-00127
+
+>>PRODUCTS_ID:
+3HAC6811-2.27 0986 System Pack 4.0
+  IRB 6600/2.55-175
+  Service Info System
+  Calib. Pendelum RAPID
+  Ethernet Services
+  FactoryWare Communication
+  RAP Communication
+  Advanced Functions
+  Advanced Motion
+  LoadId and ColDetect
+  Multitasking
+  Developer Functions
+  IO Plus
+
+>>ROBOT_TYPE:
+6600/2.55-175
+
+>>HOME:
+All public files and directories
+
+>>SYSPAR:
+SYS.cfg
+SIO.cfg
+EIO.cfg
+MOC.cfg
+PROC.cfg
+MMC.cfg
+
+>>TASK0: (MAIN)
+SYSMOD/USER.sys @ user.sys
+PROGMOD/MAINPROG.mod @ 
+SYSMOD/PosRec.sys @ home:/system/posrec.sys
+SYSMOD/wzones.sys @ home:/system/wzones.sys
+SYSMOD/RobData.sys @ home:/robdata/robdata.sys
+SYSMOD/instrlib.sys @ home:/system/instrlib.sys
+
+
+>>EOF:
