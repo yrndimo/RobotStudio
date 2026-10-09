@@ -1,0 +1,12 @@
+# Codice RAPID come testo (diff leggibili)
+*.mod  text eol=crlf
+*.modx text eol=crlf
+*.sys  text eol=crlf
+*.sysx text eol=crlf
+*.prg  text eol=crlf
+*.pgf  text eol=crlf
+*.cfg  text eol=crlf
+# File di stazione binari
+*.rspag binary
+*.rsstn binary
+*.rslib binary

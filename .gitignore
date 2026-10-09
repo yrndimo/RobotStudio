@@ -1,0 +1,13 @@
+# RobotStudio - file temporanei / generati
+*.rsstn.bak
+*.bak
+*.tmp
+*.log
+Backup*/
+**/HOME/Temp/
+# Controller virtuali generati localmente (ricreabili dalla stazione)
+**/Virtual Controllers/
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
