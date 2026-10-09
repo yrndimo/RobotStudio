@@ -1,0 +1,79 @@
+%%%
+  VERSION: 1
+  LANGUAGE: ENGLISH
+%%%
+
+MODULE BASE_MT (SYSMODULE, NOSTEPIN, VIEWONLY)
+
+ ! System module for additional tasks besides the main task
+ ! with basic predefined system data and routines
+ !*********************************************************
+ 
+ 
+ ! System data tool0, wobj0 and load0
+ ! Do not translate or delete tool0, wobj0, load0
+ PERS tooldata tool0 := [TRUE, [[0, 0, 0], [1, 0, 0, 0]],
+                        [0.001, [0, 0, 0.001],[1, 0, 0, 0], 0, 0, 0]];
+		 			 	 
+ PERS wobjdata wobj0 := [FALSE, TRUE, "", [[0, 0, 0],[1, 0, 0, 0]],
+                        [[0, 0, 0],[1, 0, 0, 0]]];
+										
+ PERS loaddata load0 := [0.001, [0, 0, 0.001],[1, 0, 0, 0], 0, 0, 0];
+ 
+ 
+ 
+ ! Instruction Open parameter Object
+ CONST string diskhome := "HOME:";
+ CONST string disktemp := "TEMP:";   
+ CONST string flp1 := "flp1:";
+ ! Only for old program from S4C system
+ CONST string ram1disk := "HOME:";
+
+ ! Constant pi
+ CONST num pi := 3.1415926; 
+ 
+ ! Constant empty string
+ ! (stEmpty hard coded in MMC, do not change the name)
+ CONST string stEmpty:="";
+ 
+ ! Declaration of symbolical data for digital signals value
+ CONST dionum high := 1;
+ CONST dionum low  := 0;
+ CONST dionum edge := 2;
+ 
+ ! Instruction TestSignDefine parameter SignalId
+ !**********************************************
+ CONST testsignal speed          :=  6; 
+ CONST testsignal torque_ref     :=  9; 
+ CONST testsignal resolver_angle :=  1; 
+ CONST testsignal speed_ref      :=  4;
+ CONST testsignal dig_input1     := 102; 
+ CONST testsignal dig_input2     := 103;  
+ 
+ ! Test Digital Input
+ FUNC bool TestDI(VAR signaldi Signal)
+  IF Signal = 1 THEN
+   RETURN TRUE;
+  ELSE
+   RETURN FALSE;
+  ENDIF
+ ENDFUNC
+ 
+ ! Call a procedure by a variable
+ PROC CallByVar(string Name,
+                num   Number)
+  IF (Number-Trunc(Number) <> 0) OR (Number<0) THEN
+   ErrWrite "CallByVar fault", "Argument Number is not an integer or"
+            \RL2:= "is negative.";
+   Stop;
+   EXIT;
+  ENDIF
+  %Name+NumToStr(Number,0)%;
+ ENDPROC
+   
+ENDMODULE
+
+
+
+
+

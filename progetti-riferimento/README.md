@@ -8,6 +8,6 @@ Ogni progetto ha la sua cartella, creata copiando `_TEMPLATE/`.
 
 | Progetto | Robot | Applicazione | Note |
 |----------|-------|--------------|------|
-| _(esempio)_ `pick-and-place-irb120` | IRB 120 | Pick & place | Uso di WorkObject e offset |
+| [`irb6600-asservimento-cnc`](irb6600-asservimento-cnc/) | IRB 6600 (S4C+, RW 4.0) | Asservimento CNC, doppia pinza | Missioni da PLC, moduli pezzo dinamici, ritorno Home su percorso registrato |
 
 <!-- Aggiungi una riga per ogni progetto caricato -->
