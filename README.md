@@ -29,4 +29,5 @@ RobotStudio/
 - Versiona soprattutto il **codice RAPID** (file di testo): è quello che si confronta e riutilizza meglio.
 - Per esportare i moduli: in RobotStudio, scheda *RAPID* → tasto destro sul modulo → *Save Module As…*,
   oppure usa un **Backup** del controller (cartella `RAPID/TASK1/PROGMOD`).
-- GitHub rifiuta file oltre **100 MB**: per stazioni `.rspag` molto pesanti valuta Git LFS o un link esterno nel README.
+- Dal **browser** si caricano file fino a **25 MB** l'uno; con **GitHub Desktop** fino a **100 MB**.
+  Per stazioni `.rspag` più pesanti valuta Git LFS o un link esterno nel README.
